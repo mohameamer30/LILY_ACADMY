@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>لوحة التحكم - لي لي أكاديمي</title>
+</head>
+<body>
+    <div class="container">
+        <h1>لوحة التحكم - لي لي أكاديمي</h1>
+        <form id="adminForm">
+            <label for="adminPassword">كلمة المرور:</label>
+            <input type="password" id="adminPassword" required placeholder="كلمة المرور">
+            <button type="button" id="loginAdminBtn">دخول</button>
+            <div class="message" id="adminMessage"></div>
+        </form>
+        <div id="userTableContainer" style="display: none;">
+            <h2>قائمة المستخدمين</h2>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>اسم الطفل</th>
+                        <th>اسم ولي الأمر</th>
+                        <th>سن الطفل</th>
+                        <th>رقم الهاتف</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody">
+                    <!-- المستخدمون سيضافون هنا -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+<div id="userTableContainer" style="display: none;">
+    <h2>قائمة المستخدمين</h2>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>اسم الطفل</th>
+                <th>اسم ولي الأمر</th>
+                <th>سن الطفل</th>
+                <th>رقم الهاتف</th>
+                <th>تغيير كلمة المرور</th>
+                <th>حذف</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- المستخدمون سيضافون هنا -->
+        </tbody>
+    </table>
+</div>

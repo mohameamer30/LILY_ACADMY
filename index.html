@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لي لي أكاديمي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* خلفية صفحة تسجيل الدخول */
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sub-header {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .contact {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .stats {
+            margin: 20px 0;
+        }
+        .stats-button {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        .welcome {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">لي لي أكاديمي</div>
+    <div class="sub-header">الرئيسة</div>
+    <div class="contact">أ/ ساره محمد عاشور</div>
+    <div class="contact">في حدوث مشكلة يمكن تواصل على: 01551667994</div>
+
+    <div class="stats">
+        <span class="stats-button" onclick="toggleStats()">إحصائيات الطفل (⋮)</span>
+        <div id="statsContent" style="display:none;">
+            <p>معلومات إحصائيات الطفل ستظهر هنا.</p>
+        </div>
+    </div>
+
+    <div class="welcome">مرحباً بكم في حضانة لي لي أكاديمي</div>
+
+    <div class="footer">حقوق الطبع والنشر © 2024</div>
+
+    <script>
+        function toggleStats() {
+            var content = document.getElementById("statsContent");
+            content.style.display = (content.style.display === "none") ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الصفحة الرئيسية</title>
+</head>
+<body>
+    <h1>مرحبا بكم في الموقع</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">عن الموقع</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

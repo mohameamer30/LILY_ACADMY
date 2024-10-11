@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>لي لي أكاديمي - إنشاء حساب</title>
+</head>
+<body>
+    <div class="container">
+        <h1>👀 لي لي أكاديمي 👀</h1>
+        <h2>إنشاء حساب جديد</h2>
+        <form id="signupForm">
+            <label for="username">اسم المستخدم:</label>
+            <input type="tel" id="username" name="username" required placeholder="رقم الهاتف">
+
+            <label for="childName">اسم الطفل:</label>
+            <input type="text" id="childName" name="childName" required placeholder="اسم الطفل">
+
+            <label for="guardianName">اسم ولي الأمر:</label>
+            <input type="text" id="guardianName" name="guardianName" required placeholder="اسم ولي الأمر">
+
+            <label for="childAge">سن الطفل:</label>
+            <input type="number" id="childAge" name="childAge" required placeholder="سن الطفل">
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="رقم الهاتف">
+
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" required placeholder="كلمة المرور">
+
+            <label for="confirmPassword">تأكيد كلمة المرور:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="تأكيد كلمة المرور">
+
+            <button type="button" id="signupBtn">إنشاء حساب</button>
+            <div class="message" id="signupMessage"></div>
+
+            <p class="login-text">هل لديك حساب؟ <a href="login.html">تسجيل دخول</a></p>
+        </form>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
